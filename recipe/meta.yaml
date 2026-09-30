@@ -1,10 +1,10 @@
 {% set name = "perl-module-pluggable" %}
-{% set version = "5.2" %}
-{% set sha256 = "b3f2ad45e4fd10b3fb90d912d78d8b795ab295480db56dc64e86b9fa75c5a6df" %}
+{% set version = "6.4" %}
+{% set sha256 = "970fd13accd3d538e637db080ebbd9898020c8b5591837c8493a39edd737922d" %}
 
 package:
   name: {{ name }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://cpan.metacpan.org/authors/id/S/SI/SIMONW/Module-Pluggable-{{ version }}.tar.gz
@@ -47,8 +47,8 @@ about:
   license_family: OTHER
   summary: 'automatically give your module the ability to have plugins'
   license_file:
-    - {{ environ["PREFIX"] }}/man/man1/perlartistic.1
-    - {{ environ["PREFIX"] }}/man/man1/perlgpl.1
+    - {{ environ["PREFIX"] }}/lib/perl5/core_perl/pod/perlartistic.pod
+    - {{ environ["PREFIX"] }}/lib/perl5/core_perl/pod/perlgpl.pod
 
 extra:
   recipe-maintainers:

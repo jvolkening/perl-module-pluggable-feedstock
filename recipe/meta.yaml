@@ -39,7 +39,7 @@ requirements:
 test:
   imports:
     - Module::Pluggable
-    - Module::Pluggable::Object
+    - Module::Pluggable::Object 5.3
 
 about:
   home: https://metacpan.org/dist/Module-Pluggable
